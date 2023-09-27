@@ -34,15 +34,15 @@ Bu proje, create-react-app (CRA) kullanılarak bir araya getirildi. Bu projenin 
 
 **Planlama**
 
-- [ ] Eğer istersen, tasarıma uğraşmadan, basit bir taslak oluşturabilirsin. (kaynak ve örnekler için: ["simple wireframes"](https://www.google.com/search?q=simple+wireframes&tbm=isch)). **Bir kalem ve kağıt, planlamaya başlamanın en hızlı yoludur.**
-- [ ] Aklında bir tasarım planı oluşturduğunda, tek tek bileşenlere ayır.
-- [ ] Hangi bileşenlerin stateleri tutacağını, her birinin hangi veriler için hangi proplara ihtiyaç duyduğunu (varsa) ve verileri nereden alacağını planla.
-- [ ] Şimdi koda geçme zamanı!
+- [X] Eğer istersen, tasarıma uğraşmadan, basit bir taslak oluşturabilirsin. (kaynak ve örnekler için: ["simple wireframes"](https://www.google.com/search?q=simple+wireframes&tbm=isch)). **Bir kalem ve kağıt, planlamaya başlamanın en hızlı yoludur.**
+- [X] Aklında bir tasarım planı oluşturduğunda, tek tek bileşenlere ayır.
+- [X] Hangi bileşenlerin stateleri tutacağını, her birinin hangi veriler için hangi proplara ihtiyaç duyduğunu (varsa) ve verileri nereden alacağını planla.
+- [X] Şimdi koda geçme zamanı!
 
 **Dosya yapısı**
 
-- [ ] Planladığın bileşenlere yapısal bir gözle de bak. Her bileşen için ihtiyacın olan klasörleri ve dosyaları oluştur.
-- [ ] İlk önce statik HTML ile başlayıp, içerikteki dinamik datayı istersen statik bırak. Bunları axios gerçekten başlamadan önce ekranda nasıl göreceğini planla, sonra API'den alarak ilerleyebilirsin.
+- [X] Planladığın bileşenlere yapısal bir gözle de bak. Her bileşen için ihtiyacın olan klasörleri ve dosyaları oluştur.
+- [X] İlk önce statik HTML ile başlayıp, içerikteki dinamik datayı istersen statik bırak. Bunları axios gerçekten başlamadan önce ekranda nasıl göreceğini planla, sonra API'den alarak ilerleyebilirsin.
 
 **Verileri Çekme**
 
