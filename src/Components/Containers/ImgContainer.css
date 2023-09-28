@@ -1,3 +1,5 @@
 .ImgContainer{
-    width: 90%;
+    display: inline;
+    margin: 0 1rem 1rem 1rem;
+    width: 50%;
 }

@@ -1,30 +1,33 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import styled from "styled-components";
+import Main from "./Components/Main"
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.css";
-import Header from "./Components/Header/Header";
-import Content from "./Components/Content/Content";
-import Footer from "./Components/Footer/Footer";
-
+const API_KEY = "vg6bcwJ32djbyjR6jjISQQ7wOesJakZ97Etn95oX";
+//&date=2022-01-25
 function App() {
-  const [nasaAPOD, setNasaAPOD] = useState({})
-  useEffect(() => {
-    axios
-      .get("https://api.nasa.gov/planetary/apod?api_key=vg6bcwJ32djbyjR6jjISQQ7wOesJakZ97Etn95oX")
-      .then((res) => {
-        setNasaAPOD(res.data);
-      })
-      .catch((error) => {
-        console.log(error.log);
-      })
-  }, [])
-  console.log(nasaAPOD);
+ 
+  const [data, setData] = useState({})
+    useEffect(() => {
+        axios
+            .get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
+            .then((res) => {
+                setData(res.data);
+            })
+            .catch((error) => {
+                console.log(error.log);
+            })
+    }, [])
+    const App = styled.div`
+    display:flex;
+    background-image:url(${data.url});
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:center;
+  `
   return (
-    <div className="App">
-      <Header />
-      <Content nasaAPOD={nasaAPOD} />
-      <Footer nasaAPOD={nasaAPOD} />
-    </div>
+    <App>
+      <Main data={data}></Main>
+    </App>
   );
 }
 
